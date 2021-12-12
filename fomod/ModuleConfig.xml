@@ -10,7 +10,7 @@
                     <plugins order="Explicit">
                         <plugin name="Release (Special Edition)">
                             <description>
-                                For Skyrim Special Edition pre-Anniversary Edition.
+                                For Skyrim Special Edition pre-Anniversary update (executable version 1.5.x).
                             </description>
                             <files>
                                 <folder source="WBA - Vanilla Config" destination="." />
@@ -39,7 +39,7 @@
 
                         <plugin name="Debug (Special Edition)">
                             <description>
-                                For Skyrim Special Edition pre-Anniversary Edition.
+                                For Skyrim Special Edition pre-Anniversary update (executable version 1.5.x).
 
 <!-- fix formatting issue    -->In case you run into problems, the debug version may be able to provide additional information for troubleshooting.
                             </description>
@@ -70,7 +70,7 @@
 
                         <plugin name="Release (Anniversary Edition)">
                             <description>
-                                For Skyrim Anniversary Edition.
+                                For Skyrim Special Edition post-Anniversary update (executable version 1.6.x).
                             </description>
                             <files>
                                 <folder source="WBA - Vanilla Config" destination="." />
@@ -93,7 +93,7 @@
 
                         <plugin name="Debug (Anniversary Edition)">
                             <description>
-                                For Skyrim Anniversary Edition.
+                                For Skyrim Special Edition post-Anniversary update (executable version 1.6.x).
 
 <!-- fix formatting issue    -->In case you run into problems, the debug version may be able to provide additional information for troubleshooting.
                             </description>
@@ -131,6 +131,37 @@
                             </files>
                             <typeDescriptor>
                                 <type name="Optional" />
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+
+        <installStep name="Creation Club Patches">
+            <optionalFileGroups order="Explicit">
+                <group name="Select patches:" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="Arcane Archer Pack">
+                            <description>
+                                Covers bound arrows added by Arcane Archer Pack.
+                            </description>
+                            <files>
+                                <folder source="WBA - CC Arcane Archer Pack Patch" />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="NotUsable" />
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies operator="Or">
+                                                <fileDependency file="ccbgssse002-exoticarrows.esl" state="Active" />
+                                                <fileDependency file="ccbgssse002-exoticarrows.esl" state="Inactive" />
+                                            </dependencies>
+                                            <type name="Recommended" />
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
                             </typeDescriptor>
                         </plugin>
                     </plugins>
