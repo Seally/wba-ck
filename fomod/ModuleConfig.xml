@@ -1,0 +1,141 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+
+    <moduleName>Weightless Bound Arrows (WBA)</moduleName>
+
+    <installSteps order="Explicit">
+        <installStep name="Basic Installation">
+            <optionalFileGroups order="Explicit">
+                <group name="Select SKSE Plugin:" type="SelectExactlyOne">
+                    <plugins order="Explicit">
+                        <plugin name="Release (Special Edition)">
+                            <description>
+                                For Skyrim Special Edition pre-Anniversary Edition.
+                            </description>
+                            <files>
+                                <folder source="WBA - Vanilla Config" destination="." />
+                                <folder source="WBA - SKSE Plugin (Release - Special Edition)" destination="." />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="NotUsable" />
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.6" />
+                                            </dependencies>
+                                            <type name="NotUsable" />
+                                        </pattern>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.5" />
+                                            </dependencies>
+                                            <type name="Recommended" />
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+
+                        <plugin name="Debug (Special Edition)">
+                            <description>
+                                For Skyrim Special Edition pre-Anniversary Edition.
+
+<!-- fix formatting issue    -->In case you run into problems, the debug version may be able to provide additional information for troubleshooting.
+                            </description>
+                            <files>
+                                <folder source="WBA - Vanilla Config" destination="." />
+                                <folder source="WBA - SKSE Plugin (Debug - Special Edition)" destination="." />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="NotUsable" />
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.6" />
+                                            </dependencies>
+                                            <type name="NotUsable" />
+                                        </pattern>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.5" />
+                                            </dependencies>
+                                            <type name="Optional" />
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+
+                        <plugin name="Release (Anniversary Edition)">
+                            <description>
+                                For Skyrim Anniversary Edition.
+                            </description>
+                            <files>
+                                <folder source="WBA - Vanilla Config" destination="." />
+                                <folder source="WBA - SKSE Plugin (Release - Anniversary Edition)" destination="." />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="NotUsable" />
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.6" />
+                                            </dependencies>
+                                            <type name="Recommended" />
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+
+                        <plugin name="Debug (Anniversary Edition)">
+                            <description>
+                                For Skyrim Anniversary Edition.
+
+<!-- fix formatting issue    -->In case you run into problems, the debug version may be able to provide additional information for troubleshooting.
+                            </description>
+                            <files>
+                                <folder source="WBA - Vanilla Config" destination="." />
+                                <folder source="WBA - SKSE Plugin (Debug - Anniversary Edition)" destination="." />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="NotUsable" />
+                                    <patterns>
+                                        <pattern>
+                                            <dependencies>
+                                                <gameDependency version="1.6" />
+                                            </dependencies>
+                                            <type name="Optional" />
+                                        </pattern>
+                                    </patterns>
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+
+                <group name="Other:" type="SelectAny">
+                    <plugins order="Explicit">
+                        <plugin name="Licenses">
+                            <description>
+                                This simply includes copies of licenses for libraries used to build WBA to comply with their license terms.
+
+<!-- fix formatting issue    -->You do not need to install this.
+                            </description>
+                            <files>
+                                <folder source="Licenses" />
+                            </files>
+                            <typeDescriptor>
+                                <type name="Optional" />
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+    </installSteps>
+</config>

@@ -1,0 +1,14 @@
+{
+    "xml.fileAssociations": [
+        {
+            "pattern": "ModuleConfig.xml",
+            "systemId": "https://raw.githubusercontent.com/GandaG/fomod-schema/master/ModuleConfig.xsd"
+        }
+    ],
+    "deno.enable": true,
+    "deno.unstable": true,
+    "deno.config": "./deno.jsonc",
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": true
+    }
+}
