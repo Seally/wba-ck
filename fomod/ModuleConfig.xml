@@ -8,7 +8,7 @@
             <optionalFileGroups order="Explicit">
                 <group name="Select SKSE Plugin:" type="SelectExactlyOne">
                     <plugins order="Explicit">
-                        <plugin name="Release (Special Edition)">
+                        <plugin name="Release (pre-Anniversary)">
                             <description>
                                 For Skyrim Special Edition pre-Anniversary update (executable version 1.5.x).
                             </description>
@@ -17,27 +17,11 @@
                                 <folder source="WBA - SKSE Plugin (Release - Special Edition)" destination="." />
                             </files>
                             <typeDescriptor>
-                                <dependencyType>
-                                    <defaultType name="NotUsable" />
-                                    <patterns>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.6" />
-                                            </dependencies>
-                                            <type name="NotUsable" />
-                                        </pattern>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.5" />
-                                            </dependencies>
-                                            <type name="Recommended" />
-                                        </pattern>
-                                    </patterns>
-                                </dependencyType>
+                                <type name="Recommended" />
                             </typeDescriptor>
                         </plugin>
 
-                        <plugin name="Debug (Special Edition)">
+                        <plugin name="Debug (pre-Anniversary)">
                             <description>
                                 For Skyrim Special Edition pre-Anniversary update (executable version 1.5.x).
 
@@ -48,71 +32,7 @@
                                 <folder source="WBA - SKSE Plugin (Debug - Special Edition)" destination="." />
                             </files>
                             <typeDescriptor>
-                                <dependencyType>
-                                    <defaultType name="NotUsable" />
-                                    <patterns>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.6" />
-                                            </dependencies>
-                                            <type name="NotUsable" />
-                                        </pattern>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.5" />
-                                            </dependencies>
-                                            <type name="Optional" />
-                                        </pattern>
-                                    </patterns>
-                                </dependencyType>
-                            </typeDescriptor>
-                        </plugin>
-
-                        <plugin name="Release (Anniversary Edition)">
-                            <description>
-                                For Skyrim Special Edition post-Anniversary update (executable version 1.6.x).
-                            </description>
-                            <files>
-                                <folder source="WBA - Vanilla Config" destination="." />
-                                <folder source="WBA - SKSE Plugin (Release - Anniversary Edition)" destination="." />
-                            </files>
-                            <typeDescriptor>
-                                <dependencyType>
-                                    <defaultType name="NotUsable" />
-                                    <patterns>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.6" />
-                                            </dependencies>
-                                            <type name="Recommended" />
-                                        </pattern>
-                                    </patterns>
-                                </dependencyType>
-                            </typeDescriptor>
-                        </plugin>
-
-                        <plugin name="Debug (Anniversary Edition)">
-                            <description>
-                                For Skyrim Special Edition post-Anniversary update (executable version 1.6.x).
-
-<!-- fix formatting issue    -->In case you run into problems, the debug version may be able to provide additional information for troubleshooting.
-                            </description>
-                            <files>
-                                <folder source="WBA - Vanilla Config" destination="." />
-                                <folder source="WBA - SKSE Plugin (Debug - Anniversary Edition)" destination="." />
-                            </files>
-                            <typeDescriptor>
-                                <dependencyType>
-                                    <defaultType name="NotUsable" />
-                                    <patterns>
-                                        <pattern>
-                                            <dependencies>
-                                                <gameDependency version="1.6" />
-                                            </dependencies>
-                                            <type name="Optional" />
-                                        </pattern>
-                                    </patterns>
-                                </dependencyType>
+                                <type name="Optional" />
                             </typeDescriptor>
                         </plugin>
                     </plugins>
